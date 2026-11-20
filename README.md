@@ -112,3 +112,18 @@ Notes and the daily log live in `Documents\MochiVault\notes.md`. Never put passw
 > reorganize my notes in ~/Documents/MochiVault/notes.md, keep the `# Notes` / `## title` and `# Daily` / `## YYYY-MM-DD` structure
 
 The widget picks up the change automatically.
+
+## Screenshots
+my little cute dog icon >< <br>
+
+<img width="84" height="84" alt="promo-dog" src="https://github.com/user-attachments/assets/70af0b86-803f-4231-8a79-e9bf711e2345" />
+
+overview <br>
+
+<img width="824" height="966" alt="promo-all" src="https://github.com/user-attachments/assets/4b407e67-865e-4d03-900f-124d4b40ca1b" />
+
+
+
+
+
+
