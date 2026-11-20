@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+  <title>Mochi Vault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="mini" class="mini hidden" title="Click to open · drag to move">
+    <svg class="mochi" viewBox="0 0 100 100" aria-hidden="true">
+      <ellipse class="shadow" cx="50" cy="90" rx="28" ry="4.5"/>
+      <path class="body" d="M12 68 C12 38 29 22 50 22 C71 22 88 38 88 68 C88 82 73 87 50 87 C27 87 12 82 12 68 Z"/>
+      <path class="leaf" d="M50 23 C47 13 39 9 33 11 C36 18 43 22 50 23 Z"/>
+      <ellipse class="shine" cx="34" cy="38" rx="8" ry="3.5" transform="rotate(-32 34 38)"/>
+      <g class="eyes"><ellipse cx="38" cy="59" rx="3.6" ry="4.6"/><ellipse cx="62" cy="59" rx="3.6" ry="4.6"/></g>
+      <g class="happy-eyes"><path d="M34 60 Q38 54 42 60"/><path d="M58 60 Q62 54 66 60"/></g>
+      <g class="sleep-eyes"><path d="M34 58 Q38 63 42 58"/><path d="M58 58 Q62 63 66 58"/></g>
+      <ellipse class="blush" cx="28" cy="68" rx="6" ry="3.4"/>
+      <ellipse class="blush" cx="72" cy="68" rx="6" ry="3.4"/>
+      <path class="mouth" d="M45 67 Q50 72 55 67"/>
+    </svg>
+    <img class="mascot-img" alt="" draggable="false">
+    <span class="heart" aria-hidden="true">💖</span>
+    <span class="zzz" aria-hidden="true">💤</span>
+    <span class="water-drop" aria-hidden="true">💧</span>
+    <span class="mini-lock" aria-hidden="true">🔒</span>
+    <span class="vpn-alert" aria-hidden="true"></span>
+    <span id="miniBadge" class="badge hidden"></span>
+  </div>
+
+  <div id="app" class="app">
+    <header class="titlebar">
+      <span id="brand" class="brand">🍡 Mochi Vault</span>
+      <span class="spacer"></span>
+      <button id="waterBtn" class="icon hidden" title="Time for a sip! Click when done">💧</button>
+      <button id="vpnPill" class="vpn-pill hidden"><span class="vpn-light"></span>VPN</button>
+      <button id="lockBtn" class="icon" title="Locked">🔒</button>
+      <button id="menuBtn" class="icon" title="More">⋯</button>
+      <button id="miniBtn" class="icon" title="Shrink to mochi">–</button>    </header>
+
+    <nav class="tabs">
+      <button data-tab="keys" class="active">🔑 Keys</button>
+      <button data-tab="links">🔗 Links</button>
+      <button data-tab="today">✅ Today</button>
+      <button data-tab="notes">📝 Notes</button>
+    </nav>
+
+    <main id="main">
+      <section id="tab-keys" class="tab active"></section>
+      <section id="tab-links" class="tab"></section>
+      <section id="tab-today" class="tab"></section>
+      <section id="tab-notes" class="tab"></section>
+    </main>
+
+    <div id="menu" class="menu hidden">
+      <button data-act="sticky">🗒 Import Sticky Notes</button>
+      <button data-act="trash">🗑 Trash</button>
+      <button data-act="export">💾 Export backup</button>
+      <button data-act="import">📥 Import backup</button>
+      <button data-act="openNotes">📂 Open notes folder</button>
+      <button data-act="mascots">🐾 Mascots</button>
+      <button data-act="water">💧 Water reminder</button>
+      <button data-act="rename">✏️ Rename</button>
+      <button data-act="twofactor">🔑 Two-factor (app code)</button>
+      <button id="autostartBtn" data-act="autostart">⬜ Start with Windows</button>
+      <button id="vpnLightBtn" data-act="vpnLight" class="hidden">🔌 Hide VPN light</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal hidden"><div id="sheet" class="sheet"></div></div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

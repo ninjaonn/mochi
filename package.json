@@ -1,0 +1,18 @@
+{
+  "name": "mochi-vault",
+  "version": "0.1.0",
+  "description": "Cute always-on-top widget for masked passwords, notes and a daily log",
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "start": "set ELECTRON_RUN_AS_NODE=&& electron .",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11"
+  },
+  "dependencies": {
+    "koffi": "^2.16.3",
+    "qrcode": "^1.5.4"
+  }
+}

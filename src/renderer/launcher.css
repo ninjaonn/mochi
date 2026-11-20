@@ -1,0 +1,45 @@
+.launcher { padding: 8px; }
+.launcher-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, var(--bg-2), var(--bg-1));
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .4);
+}
+.launcher-input {
+  flex: none;
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  outline: none;
+  background: rgba(0, 0, 0, .2);
+  font-size: 15px;
+}
+.launcher-input:focus { border-color: var(--accent); }
+.launcher-results { flex: 1; min-height: 0; margin: 8px 0; overflow-y: auto; }
+.launcher-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  text-align: left;
+}
+.launcher-row.selected { background: var(--card-hover); }
+.launcher-icon { flex: none; }
+.launcher-text { flex: 1; min-width: 0; }
+.launcher-title, .launcher-sub { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.launcher-title { font-weight: 700; }
+.launcher-sub { color: var(--muted); font-size: 11px; }
+.launcher-row .chip { flex: none; }
+.launcher-empty { padding: 24px 0; color: var(--muted); text-align: center; }
+.launcher-hint { flex: none; min-height: 18px; color: var(--muted); font-size: 11px; text-align: center; }
+.launcher-hint.error { color: var(--danger); }
+.launcher-hint.done { color: var(--ok); font-weight: 700; }

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Quick search</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="launcher.css">
+</head>
+<body class="launcher">
+  <div class="launcher-card">
+    <input id="query" class="launcher-input" placeholder="🔎 Search keys and links…" spellcheck="false" autocomplete="off">
+    <input id="pin" class="launcher-input hidden" type="password" placeholder="🔒 PIN, then Enter" autocomplete="off">
+    <div id="results" class="launcher-results"></div>
+    <div id="hint" class="launcher-hint"></div>
+  </div>
+  <script src="launcher.js"></script>
+</body>
+</html>

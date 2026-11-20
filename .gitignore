@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Secrets and personal data — never commit these.
+# Mochi stores the real vault in %APPDATA%\mochi-vault, not here, but guard
+# against a copy ever landing in the project folder.
+*.enc
+vault.enc
+totp.enc
+settings.json
+notes.md
+mascots/
+
+# Backups
+*.mvault
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+*.log
